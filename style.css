@@ -1365,4 +1365,8 @@ ul li:hover .dropdown {
     width: 500px;
   }
 
+  .payment-footer img {
+    max-width: 100%;
+    height: auto;}
+
 }
