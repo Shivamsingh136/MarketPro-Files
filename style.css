@@ -1,16 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Quicksand";
   background: hsl(0, 0%, 100%);
   box-sizing: border-box;
 
 }
+
 #root {
   margin: 5px;
   padding: 5px;
   max-width: 1860px;
 }
+
+
 
 a {
   text-decoration: none;
@@ -78,7 +84,7 @@ a {
 
 .search-bar input {
   height: auto;
-  width: 250px;
+  max-width: 250px;
 }
 
 .search-bar button {
@@ -114,8 +120,8 @@ a {
 
 .add-second {
   margin: 0;
-  padding-left: 15px;
-  font-size: 0.85rem;
+  padding-left: 10px;
+  font-size: 0.8rem;
   align-items: center;
   font-weight: 700;
   color: var(--gray-900);
@@ -141,9 +147,9 @@ a {
 }
 
 nav {
-  padding: 10px;
+  padding: 5px;
   line-height: 10px;
-  justify-content: space-around;
+  justify-content: space-evenly;
 
 
 }
@@ -191,6 +197,7 @@ nav {
 
 .nav_menu {
   margin-left: 0;
+  display: flex;
 }
 
 .nav_menu ul {
@@ -203,7 +210,10 @@ nav {
 
 .nav_menu ul li {
   display: inline-block;
-  padding: 10px 20px;
+  padding: 10px 5px;
+  /* gap: 10px; */
+  display: inline-flex;
+  justify-content: space-evenly;
 }
 
 .nav_menu ul li:hover {
@@ -232,25 +242,37 @@ ul li:hover .dropdown {
   display: block;
 }
 
+.nav_phone {
+  height: 50px;
+  width: 200px;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  background-color: #299e60;
+  display: grid;
+}
 
 .nav_phone a {
-  background-color: #2b9a4c;
+  
   box-sizing: border-box;
   color: rgba(255, 255, 255, 1);
-  font-size: 1.125rem !important;
+  font-size: 18px;
+  line-height: 27px;
   font-weight: 400;
-  height: 100%;
+  font-family: "inter",sans-serif;
+  max-height: 100%;
   padding: 18px 20px;
   position: relative;
   align-items: center;
   box-sizing: border-box;
   margin: 0 2px;
+
 }
 
 /* banner */
 
 .firstsection {
-  background-color: rgb(211, 235, 192);
+  background-color: #d3ebc0;
   background-position-x: 0%;
   background-position-y: 0%;
   background-repeat: repeat;
@@ -267,9 +289,10 @@ ul li:hover .dropdown {
 }
 
 .leftsection {
-  font-size: 2rem;
+  font-size: 56px;
   color: hsl(235 49% 14%);
-  font-weight: 550;
+  font-weight: 700;
+  line-height: 67px;
   margin: 30px;
 }
 
@@ -429,8 +452,10 @@ ul li:hover .dropdown {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 15px;
   margin-bottom: 0px;
   margin-top: 20px;
+  
 }
 
 .section-header h2 {
@@ -443,6 +468,8 @@ ul li:hover .dropdown {
   font-weight: bold;
   text-decoration: none;
 }
+
+
 
 .sales-cards {
   display: flex;
@@ -578,8 +605,9 @@ ul li:hover .dropdown {
 
 .card-container {
   display: flex;
-  gap: 1px;
+  gap: 15px;
   flex-wrap: wrap;
+  margin: 15px;
 }
 
 .product-card {
@@ -590,7 +618,7 @@ ul li:hover .dropdown {
   padding: 15px;
   position: relative;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-  margin: 15px 20px;
+  /* margin: 15px 20px; */
 }
 
 .add-btn {
@@ -821,6 +849,7 @@ ul li:hover .dropdown {
   margin: 20px;
   padding: 15px;
   box-sizing: border-box;
+  background-size: cover;
 }
 
 .snacks-card-content {
@@ -964,7 +993,7 @@ ul li:hover .dropdown {
   border-radius: 20px;
   background-color: #e6f9ef;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-  min-width: 600px;
+
 }
 
 .feature-box {
@@ -1049,15 +1078,17 @@ ul li:hover .dropdown {
   flex: 1 1 150px;
   min-width: 180px;
 }
-.footer-item-img{
+
+.footer-item-img {
   margin: 0;
   padding: 0;
 }
 
-.footer-item-img .fo{
+.footer-item-img .fo {
   color: #828282;
   font-size: 15px;
 }
+
 .footer-item__title {
   font-size: 16px;
   font-weight: 600;
@@ -1112,14 +1143,16 @@ ul li:hover .dropdown {
   margin: 10px;
   padding: 20px;
 }
+
 .footer-li-a {
-  background-color: hsl(148,59%,calc(39% + (100% - 39%)*0.8));
+  background-color: hsl(148, 59%, calc(39% + (100% - 39%)*0.8));
   border-radius: 100%;
   height: 50px;
   width: 50px;
   display: grid;
 }
-.footer-li-a a{
+
+.footer-li-a a {
   margin-top: 10px;
   text-align: center;
   font-size: 30px;
@@ -1127,10 +1160,11 @@ ul li:hover .dropdown {
 
 }
 
-.footer-li-a:hover{
-  background-color: hsl(148,59%,39%);
+.footer-li-a:hover {
+  background-color: hsl(148, 59%, 39%);
 }
-.footer-li-a a:hover{
+
+.footer-li-a a:hover {
   color: white;
 }
 
@@ -1161,5 +1195,174 @@ ul li:hover .dropdown {
   height: 30px;
   align-items: center;
   justify-content: center;
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1080px) {
+  .nav_phone {
+    min-width: 190px;
+  }
+
+}
+
+@media screen and (max-width: 820px) {
+  .nav_phone {
+    min-width: 140px;
+  }
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .add-first {
+    font-size: 0.5rem;
+  }
+
+
+  .nav_phone {
+    display: none;
+  }
+
+  .toplinks {
+    display: none;
+  }
+
+  .topoptions {
+    max-width: 700px;
+  }
+
+  .topoptions .my {
+    text-align: right;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .nav-ul {
+    display: none;
+  }
+
+  .firstsection {
+    flex-direction: column;
+  }
+
+  .rightsection img {
+    width: 100%;
+  }
+
+  .fresh-section {
+    padding: 0 10px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .sales-card {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .snacks-card-container img {
+    display: none;
+  }
+
+  .shop-image {
+    display: flex;
+    flex-direction: column;
+  }
+.product-card {
+  width: 40%;
+}
+
+}
+
+@media screen and (max-width: 600px) {
+  #root {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  .topbar {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .toplinks {
+    display: none;
+  }
+
+  .topoptions {
+    max-width: 700px;
+  }
+
+  .topoptions .my {
+    text-align: right;
+  }
+
+  .search-bar {
+    display: none;
+  }
+
+  .icons {
+    display: none;
+  }
+
+  .nav-ul {
+    display: none;
+  }
+
+  .firstsection {
+    flex-direction: column;
+  }
+
+  .rightsection img {
+    width: 100%;
+  }
+
+  .fresh-section {
+    padding: 0 10px;
+  }
+
+  .card {
+    width: 100%;
+  }
+
+  .sales-card {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .snacks-card-container img {
+    display: none;
+  }
+
+  .shop-image {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feature-box-circle {
+    width: 500px;
+  }
 
 }
